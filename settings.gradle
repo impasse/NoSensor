@@ -1,0 +1,22 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        // ❗If your Plugin version is too low, be sure to add it as an Xposed Module, other cases are optional
+        maven { url "https://dl.bintray.com/kotlin/kotlin-eap" }
+        // ❗Be sure to add it as an Xposed Module, optional in other cases
+        maven { url "https://api.xposed.info/" }
+        // MavenCentral has a 2-hour cache, if you cannot integrate the latest version, please add this address
+        maven { url "https://s01.oss.sonatype.org/content/repositories/releases" }
+    }
+}
+rootProject.name = "NoSensor"
+include ':app'
