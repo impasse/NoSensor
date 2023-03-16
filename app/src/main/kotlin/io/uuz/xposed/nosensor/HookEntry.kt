@@ -16,6 +16,8 @@ class HookEntry : IYukiHookXposedInit {
     }
 
     override fun onHook() = encase {
-        loadHooker(ActivityHooker)
+        loadApp("com.tencent.qqlive", ScreenOrientationHooker(true))
+        loadApp("com.qiyi.video", ScreenOrientationHooker(true))
+        loadApp(true, ScreenOrientationHooker())
     }
 }

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="module_scope">
+        <item>com.miui.gallery</item>
+        <item>com.qiyi.video</item>
+        <item>tv.danmaku.bili</item>
+        <item>com.tencent.qqlive</item>
+        <item>com.youku.phone</item>
+    </string-array>
+</resources>
